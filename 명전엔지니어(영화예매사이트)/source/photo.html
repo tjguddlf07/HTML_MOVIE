@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>영화소개_포토_2015261005 김민수</title>
+	<style>
+		div[id=mainbody]{ background: #2B2B2B;}
+		div[class=mainh]{background:gray;}
+		#mainbody{margin:0 0 0 30px; width:760px; height:460px; border-radius:10px; border:2px solid #333333;}
+		.auto{margin:0 auto;}
+		.im{height:195px;}
+		.left{float:left;}
+		.main{margin:0 auto; width:1093px; height:445px}
+		.right{float:right;}
+		.re{width:100px; height:30px;}
+		#re{width:100px; height:72px}
+		.mainid{height:490px; width:270px;}
+		#mainid{height:150px; width:270px; background:#dddddd; border-radius:10px; border:2px solid #555555;}
+		.mainimage{width:261px;}
+		body{margin:0; background:#858585;}
+		#bnt{width:62px; height:25px; margin:0 0 0 98px;}
+		.table{margin:27px 30px 0 10px;}
+		.centerimage{margin:27px 0 10px 0;}
+		.loginset{width:200px;}
+		.loginform{margin:27px 0 0 31px}
+		#logo{width:140px; height:70px; border:1px solid #111111; background:#333333; margin:0;}
+		#logoimg{width:141px;}
+		.item{border:1px solid #222222; background:#585858; width:130px; height:30px; margin:0 auto;  border-radius:10px;padding:10px 0 0 10px;}
+		.itemtext{font-weight:bold; color:#ffffff; font-size:18px;text-decoration:none;}
+		.item1{border:1px solid #222222; background:#ffffff; width:130px; height:30px; margin:0 auto;  border-radius:10px;padding:10px 0 0 10px;}
+		.itemtext1{font-weight:bold; color:#585858; font-size:18px;text-decoration:none;}
+		#side{width:142px; height:1200px; background:#333333; border:1px solid #111111; float:left; margin:0 auto;  position:fixed; top:0px; bottom:0px; z-index:10000;}
+		#searchtext{width:600px; height:28px;border:1px solid #111111; background:#333333; border-radius:3px; color:white; font-weight:bold;}
+		#searchsubmit{width="48"; height:34px; border:1px solid #001ec9; color:white; font-weight:bold; background:#0042ed; border-radius:2px;}
+		#search{width:670px; margin:30px 0 30px 210px;}
+		#rmain{ margin:0 auto; width:1360px; height:500px}/*auto or left142*/
+		
+		div[id=all]{margin:0 auto;}
+		.bottom{width:1240px;height:130px; background:#ffffff; border:2px solid #000000;margin:20px 0 0 140px;}
+		.bottom_all{width:1240px;height:130px;}
+		.bottom_top{margin:0 auto;height:40px;border:1px dashed #cccccc;}
+		.bottom_top_item{float:left; border:1px dashed #dddddd;margin:10px 10px 10px 10px;height:20px;}
+		.bottom_top_itemtext{color:#555555; font-size:15px; font-weight:bold; margin:0;}
+		.bottom_bottom{margin:0 auto;height:85px;border:1px dashed #cccccc;}
+		.bottom_bottom_item{float:left;}
+		.bottomex{font-size:10px;}
+		#bottom_bottom_image{height:50px; margin:7px;}
+		.bottom_top_a{text-decoration:none;}
+		
+		#exam{margin:0 auto; width:1033px; height:1490px}
+		.exam{width:760px; height:1480px; border-radius:10px; border:2px solid #111111; margin:23px 0 0 0; background:#ffffff}
+		.exambnt{background:#888888;border-radius:10px 10px 0 0;height:40px;border:2px solid #666666;}
+		.exambntitem1{background:#ffffff;border-radius:10px 10px 0 0;width:135px;height:26px;border:2px solid #151515;  padding:5px; float:left;}
+		.exambnttext1{padding:5px;font-size:21px;color:#484848;font-weight:bold;text-decoration:none;}
+		.exambntitem{background:#484848;border-radius:10px 10px 0 0;width:135px;height:26px;border:2px solid #151515;  padding:5px; float:left;}
+		.exambnttext{padding:5px;font-size:21px;color:#ffffff;font-weight:bold;text-decoration:none;}
+		#story{color:#333333; font-weight:bold;margin:10px 0 0 30px;}
+		.inblock{display:inline-block;}
+		#loginunder{height:920px; width:274px; background:#111111; border-radius:10px; border:2px solid #555555;margin:20px 0 0 0;}
+		#loginunder_title{width:270px;height:70px;background:#333333; border-radius:10px;border:2px solid #111111;}
+		#loginunder_titletext{font-weight:bold;font-size:33px;color:#ffffff; margin:13px 0 0 100px;}
+		.loginunder_item{width:270px;height:110px;background:#555555; border-radius:12px;border:2px solid #111111;margin:1px 0 1px 0;}
+		.loginunder_itemtext{font-weight:bold;font-size:35px;color:#ffffff; font-family:돋움;}
+		.loginunder_item1{width:270px;height:110px;background:#ffffff; border-radius:12px;border:2px solid #111111;margin:1px 0 1px 0;}
+		.loginunder_itemtext1{font-weight:bold;font-size:35px;color:#555555; font-family:돋움;}
+		.loim{height:110px; border-radius:10px;}
+		.bsel{margin:10px}
+		
+		.mimage{width:221px;border:5px solid #999999; margin:0;}
+		.mimage:hover{border:5px solid #dd0000;}
+		.margin{margin:0px;}
+
+		#bottomon{width:1033px; height:560px;margin:0 auto;}
+		.bottomon{width:760px; height:535px; border-radius:10px; border:2px solid #111111; background:#ffffff}
+		.bottomon_col1{height:199px;position:relative;}
+		.bottomon_col2{height:199px;position:relative; bottom:31px;}
+		.bottomon_col3{height:199px;position:relative; bottom:62px;}
+		.bottomon_row1{position:absolute;left:0px;height:195px;width:136px;border:2px solid #555555; border-radius:5px;}
+		.bottomon_row1:hover{border:2px solid #cc0000;}
+		.bottomon_row1:active{border:2px solid #555555;z-index:1000;}
+		.bottomon_row2{position:absolute;left:31px;height:195px;width:136px;border:2px solid #555555; border-radius:5px;}
+		.bottomon_row2:hover{border:2px solid #cc0000;}
+		.bottomon_row2:active{border:2px solid #555555;z-index:1000;}
+		.bottomon_row3{position:absolute;left:62px;height:195px;width:136px;border:2px solid #555555; border-radius:5px;}
+		.bottomon_row3:hover{border:2px solid #cc0000;}
+		.bottomon_row3:active{border:2px solid #555555;z-index:1000;}
+		.bottomon_row4{position:absolute;left:93px;height:195px;width:136px;border:2px solid #555555; border-radius:5px;}
+		.bottomon_row4:hover{border:2px solid #cc0000;}
+		.bottomon_row4:active{border:2px solid #555555;z-index:1000;}
+		.bottomon_row5{position:absolute;left:124px;height:195px;width:136px;border:2px solid #555555; border-radius:5px;}
+		.bottomon_row5:hover{border:2px solid #cc0000;}
+		.bottomon_row5:active{border:2px solid #555555;z-index:1000;}
+		.bottomon_row6{position:absolute;left:155px;height:195px;width:136px;border:2px solid #555555; border-radius:5px;}
+		.bottomon_row6:hover{border:2px solid #cc0000;}
+		.bottomon_row6:active{border:2px solid #555555;z-index:1000;}
+		.bottomon_row7{position:absolute;left:186px;height:195px;width:136px;border:2px solid #555555; border-radius:5px;}
+		.bottomon_row7:hover{border:2px solid #cc0000;}
+		.bottomon_row7:active{border:2px solid #555555;z-index:1000;}
+		.bottomon_row8{position:absolute;left:217px;height:195px;width:136px;border:2px solid #555555; border-radius:5px;}
+		.bottomon_row8:hover{border:2px solid #cc0000;}
+		.bottomon_row8:active{border:2px solid #555555;z-index:1000;}
+		.bottomon_row9{position:absolute;left:248px;height:195px;width:136px;border:2px solid #555555; border-radius:5px;}
+		.bottomon_row9:hover{border:2px solid #cc0000;}
+		.bottomon_row9:active{border:2px solid #555555;z-index:1000;}
+		.bottomon_row10{position:absolute;left:279px;height:195px;width:136px;border:2px solid #555555; border-radius:5px;}
+		.bottomon_row10:hover{border:2px solid #cc0000;}
+		.bottomon_row10:active{border:2px solid #555555;z-index:1000;}
+		.bottomon_row11{position:absolute;left:310px;height:195px;width:136px;border:2px solid #555555; border-radius:5px;}
+		.bottomon_row11:hover{border:2px solid #cc0000;}
+		.bottomon_row11:active{border:2px solid #555555;z-index:1000;}
+		.bottomon_row12{position:absolute;left:341px;height:195px;width:136px;border:2px solid #555555; border-radius:5px;}
+		.bottomon_row12:hover{border:2px solid #cc0000;}
+		.bottomon_row12:active{border:2px solid #555555;z-index:1000;}
+		.bottomon_row13{position:absolute;left:372px;height:195px;width:136px;border:2px solid #555555; border-radius:5px;}
+		.bottomon_row13:hover{border:2px solid #cc0000;}
+		.bottomon_row13:active{border:2px solid #555555;z-index:1000;}
+		.bottomon_row14{position:absolute;left:403px;height:195px;width:136px;border:2px solid #555555; border-radius:5px;}
+		.bottomon_row14:hover{border:2px solid #cc0000;}
+		.bottomon_row14:active{border:2px solid #555555;z-index:1000;}
+		.bottomon_row15{position:absolute;left:434px;height:195px;width:136px;border:2px solid #555555; border-radius:5px;}
+		.bottomon_row15:hover{border:2px solid #cc0000;}
+		.bottomon_row15:active{border:2px solid #555555;z-index:1000;}
+		.bottomon_row16{position:absolute;left:465px;height:195px;width:136px;border:2px solid #555555; border-radius:5px;}
+		.bottomon_row16:hover{border:2px solid #cc0000;}
+		.bottomon_row16:active{border:2px solid #555555;z-index:1000;}
+		.bottomon_row17{position:absolute;left:496px;height:195px;width:136px;border:2px solid #555555; border-radius:5px;}
+		.bottomon_row17:hover{border:2px solid #cc0000;}
+		.bottomon_row17:active{border:2px solid #555555;z-index:1000;}
+		.bottomon_row18{position:absolute;left:527px;height:195px;width:136px;border:2px solid #555555; border-radius:5px;}
+		.bottomon_row18:hover{border:2px solid #cc0000;}
+		.bottomon_row18:active{border:2px solid #555555;z-index:1000;}
+		.bottomon_row19{position:absolute;left:558px;height:195px;width:136px;border:2px solid #555555; border-radius:5px;}
+		.bottomon_row19:hover{border:2px solid #cc0000;}
+		.bottomon_row19:active{border:2px solid #555555;z-index:1000;}
+		.bottomon_row20{position:absolute;left:589px;height:195px;width:136px;border:2px solid #555555; border-radius:5px;}
+		.bottomon_row20:hover{border:2px solid #cc0000;}
+		.bottomon_row20:active{border:2px solid #555555;z-index:1000;}
+		.bottomon_row21{position:absolute;left:620px;height:195px;width:136px;border:2px solid #555555; border-radius:5px;}
+		.bottomon_row21:hover{border:2px solid #cc0000;}
+		.bottomon_row21:active{border:2px solid #555555;z-index:1000;}
+		.onim{height:195px;width:136px;}
+		
+	</style>
+</head>
+<body>
+
+	<!--왼쪽 사이드-->
+	<div id="side">
+		<div id="logo"><image id="logoimg" src="../image/logo.png"></div>
+		<div class="item1"><a class="itemtext1" href="../영화메인_2015261005_김민수.html">영화 메인</a></div>
+		<div class="item"><a class="itemtext" href="../회원가입_2015261006_서형일.html">회원가입</a></div>
+		<div class="item"><a class="itemtext" href="../영화예매_2015261006_서형일.html">예매</a></div>
+		<div class="item"><a class="itemtext" href="#">공지사항</a></div>
+		<div class="item"><a class="itemtext" href="#">이벤트</a></div>
+
+	</div>
+	<!--오른쪽 메인-->
+	<div id="rmain">
+		<!--검색-->
+		<div id="search">
+			<form action="s.php" method="post" name="s">
+				<input type="text" id="searchtext" name="searching">
+				<input type="submit" id="searchsubmit" name="searchsubmit" value="검색">
+			</form>
+		</div>
+		<!--검색아래 이미지레이아웃-->
+		<div class="main">
+	
+			<!--영화이미지-->
+			<div id="mainbody" class="left">
+				<div class="left table">
+					<table>
+						<tr>
+							<td><image class="im" src="../image/movie3.jpg"></td>
+							<td><image class="im" src="../image/movie2.jpg"></td>
+							<td><image class="im" src="../image/movie4.jpg"></td>
+						</tr>	
+						<tr>
+							<td><image class="im" src="../image/movie5.jpg"></td>
+							<td><image class="im" src="../image/movie6.jpg"></td>
+							<td><image class="im" src="../image/movie7.jpg"></td>
+						</tr>		
+					</table>
+				</div>
+			<div class="auto centerimage">
+				<div>
+					<image class="mainimage" src="../image/movie1.jpg">
+			
+				</div>
+			
+				<!--예매페이지로 가는 링크-->
+				<a class="auto" id="bnt" href="../영화예매_2015261006_서형일.html"><image src="http://sstatic.naver.net/keypage/outside/movie/pc/img/btn_reservation2.gif"></a>
+					
+					
+					
+			</div>
+		</div>
+	
+		<!--로그인 div-->
+		<div class="right mainid">
+			<div id="mainid">
+				<form action="f.php" method="post" name="f" class="loginform">
+				<div class="link1">
+					<div class="left">
+						<div><input type="text" name="id" class="re" value="아이디"></div>
+						<div><input type="password" name="password" class="re" value="비밀번호"></div>
+					</div>
+					<div class="left">
+						<input type="submit" name="re" id="re" value="로그인">
+					</div><br>
+				
+				</div>
+				<div class="loginset">
+					<div class="left"><input type="checkbox" value="idcheck" id="idcheck" name="idcheck"><label for="idcheck">로그인 유지</label></div>
+					<!--회원가입 페이지로 가는 링크-->
+					<div class="right"><a href="../회원가입_2015261006_서형일.html" class="bottom_top_a">회원가입<a></div>
+				</div>
+			</form>
+			</div>
+			<!--로그인 아래 레이아웃-->
+		<div id="loginunder">
+			<div id="loginunder_title"><p id="loginunder_titletext">영화</p></div>
+			<div class="loginunder_item1"><a href="#"><image class="loim left" src="../image/movie1.jpg"><p class="left loginunder_itemtext1" >사도</p></a></div>
+			<div class="loginunder_item"><a href="#"><image class="loim left" src="../image/movie2.jpg"><p class="left loginunder_itemtext" >마션</p></a></div>
+			<div class="loginunder_item"><a href="#"><image class="loim left" src="../image/movie3.jpg"><p class="left loginunder_itemtext" >그놈이다</p></a></div>
+			<div class="loginunder_item"><a href="#"><image class="loim left" src="../image/movie4.jpg"><p class="left loginunder_itemtext" >더 폰</p></a></div>
+			<div class="loginunder_item"><a href="#"><image class="loim left" src="../image/movie5.jpg"><p class="left loginunder_itemtext" >베테랑</p></a></div>
+			<div class="loginunder_item"><a href="#"><image class="loim left" src="../image/movie6.jpg"><p class="left loginunder_itemtext" >인턴</p></a></div>
+			<div class="loginunder_item"><a href="#"><image class="loim left" src="../image/movie7.jpg"><p class="left loginunder_itemtext" >비밀</p></a></div>
+		</div>
+		</div>
+		
+	
+	</div>
+	<!--소개-->
+	<div id="exam">
+		<div class="exam">
+			<div class="exambnt">
+				<div class="exambntitem"><a href="../영화메인_2015261005_김민수.html" class="exambnttext">영화정보</a></div>
+				<div class="exambntitem1"><a href="photo.html" class="exambnttext1">포토</a></div>
+				<div class="exambntitem"><a href="movie.html" class="exambnttext">동영상</a></div>
+				<div class="exambntitem"><a href="#" class="exambnttext">평점/리뷰</a></div>
+				<div class="exambntitem"><a href="#" class="exambnttext">상영시간</a></div>
+			</div>
+			<div id="story">
+				<h2>포토</h2>
+				<div>
+					<div class="left margin">
+						<div class="margin"><image class="mimage" src="../image/movie_photo1-1.jpg"></div>
+						<div class="margin"><image class="mimage" src="../image/movie_photo1-2.jpg"></div>
+						<div class="margin"><image class="mimage" src="../image/movie_photo1-3.jpg"></div>
+						<div class="margin"><image class="mimage" src="../image/movie_photo1-4.jpg"></div>
+						<div class="margin"><image class="mimage" src="../image/movie_photo1-5.jpg"></div>
+						<div class="margin"><image class="mimage" src="../image/movie_photo1-6.jpg"></div>
+					</div>
+					<div class="left margin">
+						<div class="margin"><image class="mimage" src="../image/movie_photo2-1.jpg"></div>
+						<div class="margin"><image class="mimage" src="../image/movie_photo2-2.jpg"></div>
+						<div class="margin"><image class="mimage" src="../image/movie_photo2-3.jpg"></div>
+						<div class="margin"><image class="mimage" src="../image/movie_photo2-4.jpg"></div>
+						<div class="margin"><image class="mimage" src="../image/movie_photo2-6.jpg"></div>
+						<div class="margin"><image class="mimage" src="../image/movie_photo2-7.jpg"></div>
+					</div>
+					<div class="left margin">
+						<div class="margin"><image class="mimage" src="../image/movie_photo3-1.jpg"></div>
+						<div class="margin"><image class="mimage" src="../image/movie_photo3-2.jpg"></div>
+						<div class="margin"><image class="mimage" src="../image/movie_photo3-3.jpg"></div>
+						<div class="margin"><image class="mimage" src="../image/movie_photo3-4.jpg"></div>
+						<div class="margin"><image class="mimage" src="../image/movie_photo3-5.jpg"></div>
+						<div class="margin"><image class="mimage" src="../image/movie_photo3-6.jpg"></div>
+					</div>
+				</div>
+
+
+			</div>
+		</div>
+	</div>
+	<div id="bottomon">
+		<div class="bottomon">
+			<div class="bottomon_col1">
+				<div class="bottomon_row1"><image src="../image/movie1.jpg" class="onim"></div>
+				<div class="bottomon_row2"><image src="../image/movie2.jpg" class="onim"></div>
+				<div class="bottomon_row3"><image src="../image/movie3.jpg" class="onim"></div>
+				<div class="bottomon_row4"><image src="../image/movie4.jpg" class="onim"></div>
+				<div class="bottomon_row5"><image src="../image/movie5.jpg" class="onim"></div>
+				<div class="bottomon_row6"><image src="../image/movie6.jpg" class="onim"></div>
+				<div class="bottomon_row7"><image src="../image/movie7.jpg" class="onim"></div>
+				<div class="bottomon_row8"><image src="http://movie2.phinf.naver.net/20151012_285/1444614874682ClEkX_JPEG/movie_image.jpg?type=m203_290_2" class="onim"></div>
+				<div class="bottomon_row9"><image src="http://movie2.phinf.naver.net/20151027_224/1445919415717ixSfa_JPEG/movie_image.jpg?type=m203_290_2" class="onim"></div>
+				<div class="bottomon_row10"><image src="http://movie2.phinf.naver.net/20150922_4/14429125602616zXzR_JPEG/movie_image.jpg?type=m203_290_2" class="onim"></div>
+				<div class="bottomon_row11"><image src="http://movie2.phinf.naver.net/20150803_71/143856809490270RN4_JPEG/movie_image.jpg?type=m203_290_2" class="onim"></div>
+				<div class="bottomon_row12"><image src="http://movie2.phinf.naver.net/20151002_253/1443749397722zFJ5S_JPEG/movie_image.jpg?" class="onim"></div>
+				<div class="bottomon_row13"><image src="http://movie2.phinf.naver.net/20151016_190/14449568068113heea_JPEG/movie_image.jpg?" class="onim"></div>
+				<div class="bottomon_row14"><image src="http://movie2.phinf.naver.net/20151023_229/1445577125274clYXx_JPEG/movie_image.jpg?" class="onim"></div>
+				<div class="bottomon_row15"><image src="http://movie2.phinf.naver.net/20151021_214/1445391617206aaz53_JPEG/movie_image.jpg?" class="onim"></div>
+				<div class="bottomon_row16"><image src="http://movie2.phinf.naver.net/20151007_214/1444201221208KU71q_JPEG/movie_image.jpg?" class="onim"></div>
+				<div class="bottomon_row17"><image src="http://movie.phinf.naver.net/20151008_262/1444270902844UqyTJ_JPEG/movie_image.jpg?" class="onim"></div>
+				<div class="bottomon_row18"><image src="http://movie.phinf.naver.net/20151020_54/1445318892980iAYG1_JPEG/movie_image.jpg?type=m99_141_2" class="onim"></div>
+				<div class="bottomon_row19"><image src="http://movie2.phinf.naver.net/20151023_124/1445567669389AUnbs_JPEG/movie_image.jpg?type=m99_141_2" class="onim"></div>
+				<div class="bottomon_row20"><image src="http://movie2.phinf.naver.net/20151030_148/1446173298001QudCF_JPEG/movie_image.jpg?type=m99_141_2" class="onim"></div>
+				<div class="bottomon_row21"><image src="http://movie2.phinf.naver.net/20151029_253/14460964659783gy1G_JPEG/movie_image.jpg?type=m99_141_2" class="onim"></div>
+
+			</div>
+			<div class="bottomon_col2">
+				<div class="bottomon_row1"><image src="http://movie.phinf.naver.net/20151023_14/1445588745260QJ7fr_JPEG/movie_image.jpg?type=m99_141_2" class="onim"></div>
+				<div class="bottomon_row2"><image src="http://movie2.phinf.naver.net/20150930_216/1443589025696sX5Rj_JPEG/movie_image.jpg?type=m99_141_2" class="onim"></div>
+				<div class="bottomon_row3"><image src="http://movie.phinf.naver.net/20151015_187/1444873348288lJMdN_JPEG/movie_image.jpg?type=m99_141_2" class="onim"></div>
+				<div class="bottomon_row4"><image src="http://movie2.phinf.naver.net/20151013_167/1444700417563eiUvj_JPEG/movie_image.jpg?type=m99_141_2" class="onim"></div>
+				<div class="bottomon_row5"><image src="http://movie2.phinf.naver.net/20151027_261/1445921194937Svwyo_JPEG/movie_image.jpg?type=m99_141_2" class="onim"></div>
+				<div class="bottomon_row6"><image src="http://movie2.phinf.naver.net/20151022_230/1445506166801fl05a_JPEG/movie_image.jpg?type=m99_141_2" class="onim"></div>
+				<div class="bottomon_row7"><image src="http://movie2.phinf.naver.net/20151012_61/1444613655062eht6j_JPEG/movie_image.jpg?type=m99_141_2" class="onim"></div>
+				<div class="bottomon_row8"><image src="http://movie2.phinf.naver.net/20151012_61/1444613655062eht6j_JPEG/movie_image.jpg?" class="onim"></div>
+				<div class="bottomon_row9"><image src="http://movie.phinf.naver.net/20150922_151/14428887281671oxwb_JPEG/movie_image.jpg?type=m203_290_2" class="onim"></div>
+				<div class="bottomon_row10"><image src="http://movie2.phinf.naver.net/20150909_232/1441759710473gWjBs_JPEG/movie_image.jpg?type=m203_290_2" class="onim"></div>
+				<div class="bottomon_row11"><image src="http://movie.phinf.naver.net/20150918_209/1442541240377Yv4lp_JPEG/movie_image.jpg?type=m203_290_2" class="onim"></div>
+				<div class="bottomon_row12"><image src="http://movie2.phinf.naver.net/20151023_180/1445577228427QaTeE_JPEG/movie_image.jpg?type=m203_290_2" class="onim"></div>
+				<div class="bottomon_row13"><image src="http://movie.phinf.naver.net/20150915_185/1442285641128msR7J_JPEG/movie_image.jpg?type=m203_290_2" class="onim"></div>
+				<div class="bottomon_row14"><image src="http://movie2.phinf.naver.net/20151005_234/14440216165671nVPj_JPEG/movie_image.jpg?type=m203_290_2" class="onim"></div>
+				<div class="bottomon_row15"><image src="http://movie2.phinf.naver.net/20151007_83/1444183701565IFuVD_JPEG/movie_image.jpg?type=m203_290_2" class="onim"></div>
+				<div class="bottomon_row16"><image src="http://movie.phinf.naver.net/20150826_117/1440555714894tLnDT_JPEG/movie_image.jpg?type=m203_290_2" class="onim"></div>
+				<div class="bottomon_row17"><image src="http://movie2.phinf.naver.net/20111223_49/1324602933438V7CYJ_JPEG/movie_image.jpg?type=m203_290_2" class="onim"></div>
+				<div class="bottomon_row18"><image src="http://movie.phinf.naver.net/20151019_55/1445237788394zrMRU_JPEG/movie_image.jpg?type=m203_290_2" class="onim"></div>
+				<div class="bottomon_row19"><image src="http://movie2.phinf.naver.net/20151026_121/14458201965952ymfk_JPEG/movie_image.jpg?type=m203_290_2" class="onim"></div>
+				<div class="bottomon_row20"><image src="http://movie2.phinf.naver.net/20151016_178/1444987955309e0f8C_JPEG/movie_image.jpg?type=m203_290_2" class="onim"></div>
+				<div class="bottomon_row21"><image src="http://movie2.phinf.naver.net/20150922_136/1442887196430c7i8A_JPEG/movie_image.jpg?type=m203_290_2" class="onim"></div>
+
+			</div>
+			<div class="bottomon_col3">
+				<div class="bottomon_row1"><image src="http://movie.phinf.naver.net/20151015_130/1444895328951cyqo7_JPEG/movie_image.jpg?type=m203_290_2" class="onim"></div>
+				<div class="bottomon_row2"><http://movie2.phinf.naver.net/20151016_298/1444983602020cKmHE_JPEG/movie_image.jpg?type=m203_290_2" class="onim"></div>
+				<div class="bottomon_row3"><image src="http://movie2.phinf.naver.net/20151001_27/1443666792274ilG2x_JPEG/movie_image.jpg?type=m203_290_2" class="onim"></div>
+				<div class="bottomon_row4"><image src="http://movie2.phinf.naver.net/20150922_36/1442885119607eisXM_JPEG/movie_image.jpg?type=m203_290_2" class="onim"></div>
+				<div class="bottomon_row5"><image src="http://movie.phinf.naver.net/20150930_46/1443603332492NwKcw_JPEG/movie_image.jpg?type=m203_290_2" class="onim"></div>
+				<div class="bottomon_row6"><image src="http://movie2.phinf.naver.net/20150922_260/1442890823401sIBb5_JPEG/movie_image.jpg?type=m203_290_2" class="onim"></div>
+				<div class="bottomon_row7"><image src="http://movie.phinf.naver.net/20150922_225/1442890273989HKh3H_JPEG/movie_image.jpg?type=m203_290_2" class="onim"></div>
+				<div class="bottomon_row8"><image src="http://movie.phinf.naver.net/20111223_32/1324577751718PR2XX_JPEG/movie_image.jpg?type=m203_290_2" class="onim"></div>
+				<div class="bottomon_row9"><image src="http://movie2.phinf.naver.net/20150907_264/1441590634233JgnsS_JPEG/movie_image.jpg?type=m203_290_2" class="onim"></div>
+				<div class="bottomon_row10"><image src="http://movie2.phinf.naver.net/20150924_213/1443070202284w65oK_JPEG/movie_image.jpg?type=m203_290_2" class="onim"></div>
+				<div class="bottomon_row11"><image src="http://movie2.phinf.naver.net/20151008_292/1444285146770iilaH_JPEG/movie_image.jpg?type=m203_290_2" class="onim"></div>
+				<div class="bottomon_row12"><image src="http://movie2.phinf.naver.net/20150828_91/1440723413792Y5o9W_JPEG/movie_image.jpg?type=m203_290_2" class="onim"></div>
+				<div class="bottomon_row13"><image src="http://movie2.phinf.naver.net/20150827_95/1440654096792IEz1B_JPEG/movie_image.jpg?type=m203_290_2" class="onim"></div>
+				<div class="bottomon_row14"><image src="http://movie.phinf.naver.net/20150820_280/14400465725179LFWv_JPEG/movie_image.jpg?type=m203_290_2" class="onim"></div>
+				<div class="bottomon_row15"><image src="http://movie.phinf.naver.net/20150918_43/1442557864574K6tBK_JPEG/movie_image.jpg?type=m203_290_2" class="onim"></div>
+				<div class="bottomon_row16"><image src="http://movie2.phinf.naver.net/20150826_182/1440564486883H9eeU_JPEG/movie_image.jpg?type=m203_290_2" class="onim"></div>
+				<div class="bottomon_row17"><image src="http://movie2.phinf.naver.net/20150824_144/14403775273784piJ0_JPEG/movie_image.jpg?type=m203_290_2" class="onim"></div>
+				<div class="bottomon_row18"><image src="http://movie.phinf.naver.net/20150821_200/1440132177568sUukq_JPEG/movie_image.jpg?type=m203_290_2" class="onim"></div>
+				<div class="bottomon_row19"><image src="http://movie2.phinf.naver.net/20150812_253/1439344979633ormph_JPEG/movie_image.jpg?type=m203_290_2" class="onim"></div>
+				<div class="bottomon_row20"><image src="http://movie.phinf.naver.net/20150710_274/1436506703800TyChP_JPEG/movie_image.jpg?type=m203_290_2" class="onim"></div>
+				<div class="bottomon_row21"><image src="http://movie2.phinf.naver.net/20151006_60/1444093018200nwESN_JPEG/movie_image.jpg?type=m203_290_2" class="onim"></div>
+
+			</div>
+		</div>
+	</div>
+	<!--아래 사이드-->
+	<div class="bottom">
+		<div class="bottom_all">
+			<div class="bottom_top">
+				<div class="bottom_top_item"><a href="#"class="bottom_top_a"><p class="bottom_top_itemtext">회사소개<p></a></div>
+				<div class="bottom_top_item"><a href="#"class="bottom_top_a"><p class="bottom_top_itemtext">IR<p></a></div>
+				<div class="bottom_top_item"><a href="#"class="bottom_top_a"><p class="bottom_top_itemtext">채용정보<p></a></div>
+				<div class="bottom_top_item"><a href="#"class="bottom_top_a"><p class="bottom_top_itemtext">광고문의<p></a></div>
+				<div class="bottom_top_item"><a href="#"class="bottom_top_a"><p class="bottom_top_itemtext">제휴문의<p></a></div>
+				<div class="bottom_top_item"><a href="#"class="bottom_top_a"><p class="bottom_top_itemtext">이용약관<p></a></div>
+				<div class="bottom_top_item"><a href="#"class="bottom_top_a"><p class="bottom_top_itemtext">편성기준<p></a></div>
+				<div class="bottom_top_item"><a href="#"class="bottom_top_a"><p class="bottom_top_itemtext">개인정보취급<p></a></div>
+				<div class="bottom_top_item"><a href="#"class="bottom_top_a"><p class="bottom_top_itemtext">법적고지<p></a></div>
+				<div class="bottom_top_item"><a href="#"class="bottom_top_a"><p class="bottom_top_itemtext">상생경영<p></a></div>
+				<div class="bottom_top_item"><a href="#"class="bottom_top_a"><p class="bottom_top_itemtext">사이트맵<p></a></div>
+
+			</div>
+			<div class="bottom_bottom">
+				<div class="bottom_bottom_item"><image id="bottom_bottom_image" src="../image/logo.png"></div>
+				<div class="bottom_bottom_item">
+					<div><p class="bottomex">03922 서울특별시 마포구 월드컵북로 434, 상암 IT타워(상암동) 9~10층 / 대표이사 : 서정 / 사업자등록번호 : 104-81-45690 / 통신판매업신고번호 : 마포 0586<p></div>
+					<div>
+						<div class="left">
+							<p class="bottomex">개인정보관리 책임자 : 마케팅 실장 정종민 / 대표이메일 : cjcgvmaster@cj.net / CGV고객센터 : 1544-1122 / ARS예매 : 1544-2280</p>
+							<p class="bottomex">COPYRIGHT 2004-2015. CJ CGV All RIGHTS RESERVED.</p>
+						</div>
+						<div class="left bsel">
+							<form action="r.php" method="post" name="r" class="left">
+								<select>
+									<option >계열사 바로가기</option>
+									<option value="cj1">cj주식회사</option>
+									<option value="cj2">cj E&emp;M</option>
+									<option value="cj3">cj CGV</option>
+									<option value="cj4">cj헬로비전</option>
+									<option value="cj5">cj파워캐스트</option>
+								</select>
+								<input type="submit" value="go" id="bottom go">
+							</form>
+						</div>
+					</div>
+				</div>
+			
+			</div>
+		</div>
+	</div>
+	
+	
+	
+	
+	
+
+</body>
+</html>

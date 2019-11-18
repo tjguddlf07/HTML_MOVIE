@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>회원 가입</title>
+	<!--file명:영화소개_회원가입_2015261006_서형일.html-->
+	<style>
+		.item{border:1px solid #222222; background:#585858; width:130px; height:30px; margin:0 auto; border-radius:10px; padding:10px 0 0 10px;}
+		.itemtext{font-weight:bold; color:#ffffff; font-size:18px;text-decoration:none;}
+		.item1{border:1px solid #222222; background:#ffffff; width:130px; height:30px; margin:0 auto; border-radius:10px; padding:10px 0 0 10px;}
+		.itemtext1{font-weight:bold; color:#585858; font-size:18px;text-decoration:none;}
+		#side{width:142px;height:1200px; background:#333333; border:1px solid #111111; float:left; margin:0 auto; position:fixed; top:0px; bottom:0px;}
+
+		.left{float:left;}
+		.main{width:1020px; height:1000px;margin:0 0 0 172px;}
+		.mainleft{width:430px;height:580px; background:#ffffff; border-radius:10px; border:2px solid #222222; margin:100px 0 0 0 ;}
+		.leftitem{width:300px; margin:30px 0 0 30px;}
+		.right{float:right;}
+		body{margin:0; background-color:#555555}
+		.confirmtext{width:80px;}
+		.consent{width:400px;height:580px; background:white; border-radius:10px; margin: 100px 0 15px 15px; border:2px solid #222222; padding:0 15px 0 15px;}
+		.complete{width:180px; margin:0 auto; }
+		#logo{width:140px; height:70px; border:1px solid #111111; background:#333333; margin:0;}
+		#logoimg{width:141px;}
+		.advertise{border-radius:10px; margin:5px; float:left;  }	
+		.rightside{border:2px solid #dd0000; float:right; margin: 100px 0 0 0;}
+		.adver{margin:0 0 0 140px;}
+		.ax{text-decoration:none;}
+
+		.bottom{width:1240px; height:130px; background:#ffffff; border:2px solid #000000; margin:20px 0 0 140px;}
+		.bottom_all{width:1240px; height:130px;}
+		.bottom_top{margin:0 auto; height:40px; border:1px dashed #cccccc;}
+		.bottom_top_item{float:left;border:1px dashed #dddddd; margin:10px 10px 10px 10px; height:20px;}
+		.bottom_top_itemtext{color:#555555;font-size:15px; font-wight:bold; margin:0;}
+		.bottom_bottom{margin:0 auto; height:85px; border:1px dashed #cccccc;}
+		.bottom_bottom_item{float:left;}
+		.bottomex{font-size:10px;}
+		#bottom_bottom_image{height:50px;margin:7px;}
+	</style>
+</head>
+<body>
+
+	<!--왼쪽 사이드-->
+	<div id="side">
+		<div id="logo"><image id="logoimg" src="image/logo.png"></div>
+		<div class="item"><a class="itemtext" href="영화메인_2015261005_김민수.html">영화 메인</a></div>
+		<div class="item1"><a class="itemtext1" href="회원가입_2015261006_서형일.html">회원가입</a></div>
+		<div class="item"><a class="itemtext" href="영화예매_2015261006_서형일.html">예매</a></div>
+		<div class="item"><a class="itemtext" href="#">공지사항</a></div>
+		<div class="item"><a class="itemtext" href="#">이벤트</a></div>
+		
+		
+	</div><!--왼쪽 사이드 끝-->
+
+	<div  class="main">
+		<form name="회원가입" method="post" action="회원가입.php" >
+		<div class="mainleft left">
+			<div class="leftitem">
+				<label for="name">이름</label>
+				<input class="right" type="text" id="name" name="myname">
+			</div>
+			<div class="leftitem">
+				<label for="age">나이</label>
+				<input class="right" type="text" id="age" name="myage">
+			</div>
+			<div class="leftitem">
+				<label for="id">아이디</label>
+				<input class="right" type="text" id="id" name="myid">
+			</div>
+			<div class="leftitem">
+				<label for="password">비밀번호</label>
+				<input class="right" type="password" id="password" name="mypassword">
+			</div>
+			<div class="leftitem">
+				<label for="password1">비밀번호 재확인</label>
+				<input class="right" type="password" id="password1" name="mypassword1">
+			</div>
+			<div class="leftitem">
+				<label for="email">이메일</label>
+				<input class="right" type="text" id="email" name="myemail">
+			</div>
+			<div class="leftitem">
+				<div class="left"><label for="celltel2">휴대폰</label></div>
+				<div class="right">
+					<div class="left">
+						<select name="celltel1">
+  	    							<option value="010">010</option>
+  	    							<option value="011">011</option>
+								<option value="016">016</option>
+								<option value="013">013</option>
+  	    					</select>
+					</div>	
+					<div class="left">
+						<input type="text" name="celltel2" id="celltel2" size="5" maxlength="4">
+					</div>
+					<div class="left">
+						<input type="text" name="celltel3" size="5" maxlength="4">
+					</div>
+				</div>
+			</div><br>
+			<div class="leftitem">
+				<div class="left"><label for="confirm">인증번호</label></div>
+
+				<div class="right"><input class="confirmtext"type="text" id="confirm" name="myconfirm"><input type="button" value="인증번호 받기"></div>
+			</div><br>
+			
+			<div class="leftitem">
+				<div class="left">생년월일</div>
+				<div class="right">
+					
+					<div class="left"> <input type="text" name="text" id="year" size="3"><label for="year">년</label></div>
+					<div class="left"> <select name="month id="month"">
+							<option value="01">01</option>
+							<option value="02">02</option>
+							<option value="03">03</option>
+							<option value="04">04</option>
+							<option value="05">05</option>
+							<option value="06">06</option>
+							<option value="07">07</option>
+							<option value="08">08</option>
+							<option value="09">09</option>
+							<option value="10">10</option>
+							<option value="11">11</option>
+							<option value="12">12</option>
+						 </select>
+						<label for="month">월</label>
+					</div>
+					<div class="left"> <input type="text"name="day" id="day" size="2"><label for="day">일</label></div>
+				</div>
+			</div>
+
+		</div><!--mainleft끝-->
+
+		<div class="consent left">
+			<div><h3><i>약관</i></h3></div>
+			<div>
+				<p>
+				[개인 정보 활용 동의서]
+				회사는 회원가입에 의한 영화 찾기 사이트을 위해 다음과 같이 개인정보를 활용합니다. 
+				1. 개인정보 수집ㆍ이용(필수동의) 
+				1) 수집ㆍ이용목적: 서비스 이용에 따른 본인확인 및 가입에 필요하므로 반드시 동의가 필요합니다.
+				2) 보유ㆍ이용기간: 회원 가입일부터 회원탈퇴 후 분쟁해결을 위하여 6개월간 보유 및 이용하고 지체 없이 파기합니다 관계 법령에 따라 보관합니다.
+				</p>
+			</div>
+			<div><input type="radio" name="agree">이 사항에 동의 합니다.<br></div>
+			<div><p>
+				2. 동의 거부권 및 미 동의에 대한 불이익 안내
+ 			   	고객님께서는 정보주체로서 개인정보 동의 거부권이 있으시며, 미동의 시 서비스 가입ㆍ이용에 제약이 있을 수 있고 미동의 하신 경우 정보가 제공되지 않습니다.
+			  	 회사는 회원가입 시 수집된 개인정보를 탈퇴시까지 수집·이용합니다<br>
+			     </p>
+			</div>
+			<div><input type="radio" name="agree1">이 사항에 동의 합니다.</div>
+			<div><p>
+				[이용약관]
+				제1조(목적)
+				이 약관은 (주)넥슨코리아(이하 "회사"라고 함)가 제공하는 게임 및 제반 서비스의 이용과 관련하여 회원과 회사 간의 조건 및 절차에 관한 기본적인 사항을 정함을 목적으로 합니다.<br>
+				<input type="radio" name="agree2">이 사항에 동의 합니다.
+				</p>
+			</div>
+			
+			
+		</div> 
+<!--오른쪽 사이드 시작-->
+		<div class="rightside">
+			
+	<div>
+		<img src="http://img.cgv.co.kr/R2014/images/common/btn/btn_person_theater.gif">
+	</div>
+	<div>	
+		<img src="http://img.cgv.co.kr/R2014/images/common/btn/btn_person_arthouse.gif">
+	</div>
+	<div>
+		<img src="http://img.cgv.co.kr/R2014/images/common/btn/btn_person_special.gif">
+	</div>
+	<div>
+		<img src="http://img.cgv.co.kr/R2014/images/common/btn/btn_person_phototicket.gif">
+	</div>
+	<div>
+		<img src="http://img.cgv.co.kr/R2014/images/common/btn/btn_person_ticket.gif">
+	</div>
+	<div>
+		<img src="http://img.cgv.co.kr/R2014/images/common/btn/btn_person_discount.gif">
+	</div>
+		</div>
+<!--오른쪽 사이드 끝-->
+
+		<!--약관 끝-->
+
+		<div class="complete">
+			<a  href="영화메인_2015261005_김민수.html" class="ax"><input type="button" value="회원가입">
+			<input type="button" value="취소"></a>
+		</div><!--되돌아 가기-->
+		
+	</form>
+	<!--광고 시작-->
+		
+		<div class="adver">
+			<div class="advertise">
+				<img src="http://adimg.cgv.co.kr/images/201510/samsungfire/226_259_2.jpg">
+			</div>
+			<div class="advertise">
+				<img src="http://adimg.cgv.co.kr/images/201511/kbcgv/226x259.jpg">
+			</div>
+			<div class="advertise">
+				<img src="http://img.cgv.co.kr/Front/Main/2015/0728/%EB%A9%94%EC%9D%B8%EC%A2%8C%EC%B8%A1%ED%95%98%EB%8B%A8%EB%B0%B0%EB%84%88.png">
+			</div>
+		</div>
+	<!--광고 끝-->
+	
+
+	
+    </div><!--main끝-->
+	<!--아래 사이드 시작-->
+	<div class="bottom">
+		<div class="bottom_all">
+			<div class="bottom_top">
+				<div class="bottom_top_item"><a href="#" class="ax"><p class="bottom_top_itemtext">회사소개<p></a></div>
+				<div class="bottom_top_item"><a href="#" class="ax"><p class="bottom_top_itemtext">IR<p></a></div>
+				<div class="bottom_top_item"><a href="#" class="ax"><p class="bottom_top_itemtext">채용정보<p></a></div>
+				<div class="bottom_top_item"><a href="#" class="ax"><p class="bottom_top_itemtext">광고문의<p></a></div>
+				<div class="bottom_top_item"><a href="#" class="ax"><p class="bottom_top_itemtext">재휴문의<p></a></div>
+				<div class="bottom_top_item"><a href="#" class="ax"><p class="bottom_top_itemtext">이용약관<p></a></div>
+				<div class="bottom_top_item"><a href="#" class="ax"><p class="bottom_top_itemtext">편성기준<p></a></div>
+				<div class="bottom_top_item"><a href="#" class="ax"><p class="bottom_top_itemtext">개인정보취급<p></a></div>
+				<div class="bottom_top_item"><a href="#" class="ax"><p class="bottom_top_itemtext">법적고지<p></a></div>
+				<div class="bottom_top_item"><a href="#" class="ax"><p class="bottom_top_itemtext">상생경영<p></a></div>
+				<div class="bottom_top_item"><a href="#" class="ax"><p class="bottom_top_itemtext">사이트맵<p></a></div>
+
+			</div>
+			<div class="bottom_bottom">
+				<div class="bottom_bottom_item"><image id="bottom_bottom_image" src="image/logo.png"></div>
+				<div class="bottom_bottom_item">
+					<div><p class="bottomex">03922 서울특별시 마포구 월드컵북로 434,상암 IT타워(상압동) 9-10층 / 대표이사:서정 / 사업자등록번호:104-81-45690 / 통신판매업신고번호: 마포 0586<p></div>
+					<div>
+						<div class="left">
+							<p class="bottomex">개인정보관리 책임자 : 마케팅 실장 정종민 / 대표 이메일:cjcgvmaster@cj.net / CGV고객센터 : 1544-1122 / ARS예매 : 1544+-2280</p>
+							<p class="bottomex">COPYRIGHT 2004-2015. CJ CGV ALL RIGHT RESERVED.</p>
+						</div>
+						<div class="left bsel">
+							<form name="r" method="post" action="r.php" class="left">
+								<select>
+									<option>계열사 바로가기</option>
+									<option value="cj1">cj 주식회사</option>
+	 								<option value="cj2">cj E&emp:M</option>
+	 								<option value="cj3">cj CGV</option>
+	 								<option value="cj4">cj 헬로비젼</option>
+	 								<option value="cj5">cj 파워캐스트</option>
+								</select>
+								<input type="submit" value="go" id="bottm_go">
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div><!--아래 사이드 끝-->
+</body>
+</html>
